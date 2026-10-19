@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HavenCast 是一款 DLNA / UPnP 媒体库遥控器，用于发现并控制家庭局域网内的音箱、电视与媒体服务器。">
+  <title>HavenCast - DLNA 媒体库遥控器</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1b1f24;
+      --muted: #5c6672;
+      --brand: #2563eb;
+      --line: #e3e6ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1216;
+        --card: #171b21;
+        --text: #eef1f4;
+        --muted: #a4adb8;
+        --brand: #7aa7ff;
+        --line: #2a3038;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 20px;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+            "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    }
+    main {
+      width: min(680px, 100%);
+      padding: 40px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, .08);
+    }
+    .mark {
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: var(--brand);
+      color: #fff;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    h1 { margin: 22px 0 6px; font-size: 30px; line-height: 1.25; }
+    .tagline { margin: 0 0 20px; color: var(--muted); }
+    p { margin: 0 0 14px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 8px; }
+    a.button {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: var(--brand);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a.button.secondary {
+      background: transparent;
+      color: var(--brand);
+      border: 1px solid var(--brand);
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer a { color: inherit; }
+    @media (max-width: 520px) {
+      main { padding: 28px 22px; border-radius: 16px; }
+      h1 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">HC</div>
+    <h1>HavenCast</h1>
+    <p class="tagline">DLNA / UPnP 媒体库遥控器</p>
+
+    <p>
+      发现并控制同一 Wi-Fi 下的 DLNA 音箱、电视与媒体服务器：浏览曲库、投歌播放，
+      也可以直接播放手机里的音乐。
+    </p>
+
+    <div class="actions">
+      <a class="button" href="https://play.google.com/store/apps/details?id=com.havencast.remote">在 Google Play 获取</a>
+      <a class="button secondary" href="https://wintertt.github.io/havencast-privacy/privacy-policy-en.html">隐私政策</a>
+      <a class="button secondary" href="mailto:ihavencast@gmail.com">意见反馈</a>
+    </div>
+
+    <footer>
+      © 2026 HavenCast · <a href="https://wintertt.github.io/havencast-privacy/privacy-policy-en.html">Privacy Policy</a>
+    </footer>
+  </main>
+</body>
+</html>
